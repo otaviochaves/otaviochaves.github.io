@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <title>AluraGeek | login</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho__mobile">
+            <img src="./assets/img/Logo.png" alt="logo da alurageek" class="menu__logo">
+            <input type="search" class="menu__busca" placeholder>
+        </div><!--fechamento cabecalho mobile-->
+
+        <div class="menu__desktop">
+            <div class="menu__desktop--container">
+                <img src="./assets/img/logo desktop.png" alt="Logo da AluraGeek" class="logo__desktop">
+                <input type="search" class="menu__busca--desktop" placeholder="O que deseja encontrar?">
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="" class="formulario">
+                <h2 class="titulo__form">Iniciar Sessão</h2>
+                <input type="email" class="input__email" placeholder="Escreva seu email" required>
+                <input type="password" placeholder="Escreva sua senha" class="input__senha" required>
+                <button type="submit" class="botao__entrar">Entrar</button>
+            </form><!--fechamento formulario-->
+        </div><!--fechamento form-->
+    </main>
+
+    <footer class="rodapé">
+        <div class="contato">
+            <div class="contato__item">
+                <img src="./assets/img/Logo.png" alt="logo da AluraGeek" class="logo__contato">
+                <ul class="contato__link">
+                    <li class="link__item"><a href="#">Quem somos nós</a></li>
+                    <li class="link__item"><a href="#">Política de privacidade</a></li>
+                    <li class="link__item"><a href="#">Programa fidelidade</a></li>
+                    <li class="link__item"><a href="#">Nossas lojas</a></li>
+                    <li class="link__item"><a href="#">Quero ser franqueado</a></li>
+                    <li class="link__item"><a href="#">Anuncie aqui</a></li>
+                </ul><!--fechamento contato__link-->
+            </div><!--fechamento contato__item-->
+
+            <form action="" class="formulario__contato">
+                <h2 class="titulo__contato">Fale conosco</h2>
+                <input type="text" class="input__nome" placeholder="Nome" required>
+                <textarea cols="30" rows="10" class="textarea__mensagem" placeholder="Escreva uma mensagem"
+                    required></textarea>
+                <button type="submit" class="botao__enviar">Enviar mensagem</button>
+            </form><!--fechamento form-->
+        </div><!--fechamento contato-->
+
+        <div class="desenvolvido">
+            <h2>Desenvolvido por Otávio <span>Chaves</span></h2>
+            <p>2023</p>
+        </div><!--fechamento desenvolvido-->
+    </footer><!--fechamento rodapé-->
+
+
+</body>
+
+</html>

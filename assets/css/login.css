@@ -1,0 +1,588 @@
+/* Import Font
+========================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variáveis
+========================================================================*/
+
+:root {
+    --azul-claro: #2A7AE4;
+    --background-quase-branco: #E5E5E5;
+    --background-azul-claro-quase-branco: #bed6f8;
+    --preto: #000000;
+    --cinza: #464646;
+    --branco: #FFFFFF;
+    --cinza-mais-claro: #a3a3a3;
+}
+
+/* Header |Cabeçalho
+========================================================================*/
+
+.menu__desktop {
+    display: none;
+}
+
+.cabecalho__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 72px;
+    margin: 0 1.5rem;
+}
+
+.menu__logo {
+    width: 100px;
+    height: 28px;
+}
+
+.menu__busca {
+    width: 17.05px;
+    height: 17.05px;
+    background: url('../img/lupa\ preta.png') no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+/* main | form
+===============================================*/
+
+.form {
+    background-color: var(--background-quase-branco);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 16px;
+
+}
+
+.titulo__form {
+    color: var(--cinza);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.input__email {
+    width: 275px;
+    height: 41px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input__email::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-mais-claro);
+    padding-left: 0.5rem;
+}
+
+.input__senha {
+    width: 275px;
+    height: 41px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input__senha::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-mais-claro);
+    padding-left: 0.5rem;
+}
+
+.botao__entrar {
+    width: 109px;
+    height: 40px;
+    border: none;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao__entrar:hover {
+    background-color: #00d9ff;
+    transition: 0.5s all;
+}
+
+/* contato | Rodapé
+================================================================*/
+
+.rodapé {
+    height: 553px;
+}
+
+.contato {
+    background: var(--background-azul-claro-quase-branco);
+    padding: 1rem 0;
+}
+
+.contato__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo__contato {
+    width: 176px;
+    height: 50px;
+}
+
+.contato__link {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    ;
+}
+
+.link__item a {
+    text-decoration: none;
+    color: var(--cinza);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.link__item a:hover {
+    color: #00d9ff;
+    transition: 0.5s ease-out;
+}
+
+.formulario__contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    gap: 16px;
+}
+
+.titulo__contato {
+    font-size: 16px;
+    color: var(--cinza);
+    font-weight: 700;
+}
+
+.input__nome {
+    width: 328px;
+    height: 56px;
+    border: none;
+}
+
+.input__nome::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0.5rem;
+}
+
+.textarea__mensagem {
+    width: 328px;
+    height: 82px;
+    border: none;
+    resize: none;
+}
+
+.textarea__mensagem::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1rem 0 0 0.5rem;
+}
+
+.botao__enviar {
+    background: var(--azul-claro);
+    border: none;
+    width: 151px;
+    height: 40px;
+    color: var(--branco);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao__enviar:hover {
+    background-color: #00d9ff;
+    transition: 0.5s linear;
+}
+
+.desenvolvido {
+    background-color: #ffffff;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.desenvolvido h2 {
+    font-size: 16px;
+    color: var(--cinza);
+    font-weight: 700;
+}
+
+.desenvolvido span {
+    color: var(--azul-claro);
+}
+
+.desenvolvido p {
+    font-size: 16px;
+    color: var(--cinza);
+    font-weight: 700;
+}
+
+/*media queries
+================================================*/
+
+@media screen and (min-width: 320px) and (max-width:360px) {
+    /* Cabecalho mobile
+=============================================*/
+
+    .menu__logo {
+        width: 90px;
+        height: 28px;
+    }
+
+    /* contato | Rodapé
+===============================================*/
+
+    .input__nome {
+        width: 250px;
+        height: 45px;
+    }
+
+    .textarea__mensagem {
+        width: 250px;
+        height: 65px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /*Menu Tablets
+============================*/
+
+    .cabecalho__mobile {
+        display: none;
+    }
+
+    .menu__desktop {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 5.5rem;
+    }
+
+    .menu__desktop--container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .logo__desktop {
+        width: 100px;
+        height: 28px;
+    }
+
+    .menu__busca--desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+        width: 270px;
+        height: 35px;
+    }
+
+    .menu__busca--desktop::placeholder {
+        color: #A2A2A2;
+        background: url("../img/Vector.png") no-repeat;
+        background-position: right;
+        padding: 8px 16px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    /* contato | Rodapé
+===============================================*/
+
+    .rodapé {
+        height: 553px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 4rem 0 4rem 2rem;
+    }
+
+    .contato__item {
+        gap: 20px;
+    }
+
+    .contato__link {
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .input__nome {
+        width: 434px;
+    }
+
+    .textarea__mensagem {
+        width: 434px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width:1024px) {
+
+    /* Menu Desktop
+============================================*/
+
+    .cabecalho__mobile {
+        display: none;
+    }
+
+    .menu__desktop {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.5rem;
+        margin-left: 2rem;
+        gap: 5.5rem;
+    }
+
+    .menu__desktop--container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .logo__desktop {
+        width: 176px;
+        height: 50px;
+    }
+
+    .menu__busca--desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+        width: 393px;
+        height: 40px;
+
+
+    }
+
+    .menu__busca--desktop::placeholder {
+        color: #A2A2A2;
+        background: url("../img/Vector.png") no-repeat;
+        background-position: right;
+        padding: 8px 16px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    /*main | form
+==============================================*/
+
+    .titulo__form {
+        font-size: 18px;
+    }
+
+    .input__email {
+        width: 423px;
+        height: 63.13px;
+    }
+
+
+
+    .input__senha {
+        width: 423px;
+        height: 63.13px;
+    }
+
+    .botao__entrar {
+        width: 423px;
+        height: 62px;
+    }
+
+    .botao__entrar::placeholder {
+        font-size: 18px;
+    }
+
+
+    /* contato | Rodapé
+===============================================*/
+
+    .rodapé {
+        height: 553px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 4rem 0 4rem 2rem;
+    }
+
+    .contato__item {
+        gap: 20px;
+    }
+
+    .contato__link {
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .input__nome {
+        width: 434px;
+    }
+
+    .textarea__mensagem {
+        width: 434px;
+    }
+
+}
+
+@media screen and (min-width: 1124px) {
+
+    /* Menu Desktop
+============================================*/
+
+    .cabecalho__mobile {
+        display: none;
+    }
+
+    .menu__desktop {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 5.5rem;
+        margin-left: 5.5rem;
+    }
+
+    .menu__desktop--container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .logo__desktop {
+        width: 176px;
+        height: 50px;
+    }
+
+    .menu__busca--desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+        width: 393px;
+        height: 40px;
+
+
+    }
+
+    .menu__busca--desktop::placeholder {
+        color: #A2A2A2;
+        background: url("../img/Vector.png") no-repeat;
+        background-position: right;
+        padding: 8px 16px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+       /*main | form
+==============================================*/
+
+.titulo__form {
+    font-size: 18px;
+}
+
+.input__email {
+    width: 423px;
+    height: 63.13px;
+}
+
+.input__senha {
+    width: 423px;
+    height: 63.13px;
+}
+
+.botao__entrar {
+    width: 423px;
+    height: 62px;
+}
+
+.botao__entrar::placeholder {
+    font-size: 18px;
+}
+
+
+    /* contato | rodapé
+=======================================*/
+
+    .rodapé {
+        height: 368px;
+    }
+
+    .contato {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 5rem 0 4rem 2rem;
+        
+    }
+
+    .contato__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        gap: 112px;
+    }
+
+    .contato__link {
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .input__nome {
+        width: 560px;
+    }
+
+    .textarea__mensagem {
+        width: 560px;
+    }
+
+    .botao__enviar {
+        width: 165px;
+        height: 51px;
+    }
+
+}
